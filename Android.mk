@@ -18,6 +18,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := GmsCore
 LOCAL_MODULE_TAGS := optional
 LOCAL_PACKAGE_NAME := GmsCore
+LOCAL_PRIVILEGED_MODULE := true
 
 gmscore_root  := $(LOCAL_PATH)
 gmscore_dir   := play-services-core
