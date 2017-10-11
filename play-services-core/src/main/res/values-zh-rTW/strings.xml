@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright 2013-2017 microG Project Team
+  ~ Copyright (C) 2013-2017 microG Project Team
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="gms_app_name">microG Services Core</string>
-    <string name="gms_settings_name">設定microG</string>
+    <string name="gms_settings_name">microG設定</string>
 
     <string name="just_a_sec">請稍等...</string>
     <string name="google_account_label">Google</string>

@@ -1,5 +1,5 @@
 /*
- * Copyright 2013-2015 microG Project Team
+ * Copyright (C) 2013-2017 microG Project Team
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -545,10 +545,12 @@ public class GoogleMapImpl extends IGoogleMapDelegate.Stub
             @Override
             public void run() {
                 Log.d(TAG, "Announce map loaded");
-                try {
-                    callback.onMapLoaded();
-                } catch (RemoteException e) {
-                    Log.w(TAG, e);
+                if (callback != null) {
+                    try {
+                        callback.onMapLoaded();
+                    } catch (RemoteException e) {
+                        Log.w(TAG, e);
+                    }
                 }
             }
         }, 5000);
